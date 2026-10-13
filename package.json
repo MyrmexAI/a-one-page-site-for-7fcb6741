@@ -1,0 +1,10 @@
+{
+  "name": "forge7-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "One-page static site for FORGE 7, custom steel furniture",
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}

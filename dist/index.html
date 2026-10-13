@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FORGE 7 — Custom steel furniture, built from steel</title>
+  <meta name="description" content="FORGE 7 is a small metal workshop making custom steel furniture: tables, benches and shelves, measured, cut, welded and finished by hand.">
+  <meta name="theme-color" content="#15171a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2315171a'/%3E%3Ctext x='16' y='24' font-family='Impact,Arial' font-size='22' text-anchor='middle' fill='%23ff5a00'%3E7%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#products">Skip to products</a>
+
+  <!-- ============ HERO: FACTORY CONTROL PANEL ============ -->
+  <header class="hero" id="hero">
+    <span class="rivet rivet--tl" aria-hidden="true"></span>
+    <span class="rivet rivet--tr" aria-hidden="true"></span>
+    <span class="rivet rivet--bl" aria-hidden="true"></span>
+    <span class="rivet rivet--br" aria-hidden="true"></span>
+
+    <svg class="hero__gear" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+      <g class="gear">
+        <g fill="currentColor">
+          <circle r="76"/>
+          <g id="tooth"><rect x="-9" y="-96" width="18" height="26" rx="2"/></g>
+          <use href="#tooth" transform="rotate(30)"/>
+          <use href="#tooth" transform="rotate(60)"/>
+          <use href="#tooth" transform="rotate(90)"/>
+          <use href="#tooth" transform="rotate(120)"/>
+          <use href="#tooth" transform="rotate(150)"/>
+          <use href="#tooth" transform="rotate(180)"/>
+          <use href="#tooth" transform="rotate(210)"/>
+          <use href="#tooth" transform="rotate(240)"/>
+          <use href="#tooth" transform="rotate(270)"/>
+          <use href="#tooth" transform="rotate(300)"/>
+          <use href="#tooth" transform="rotate(330)"/>
+        </g>
+        <g fill="none" stroke="#15171a" stroke-width="5">
+          <circle r="52"/>
+          <circle r="14"/>
+        </g>
+        <g fill="#15171a">
+          <rect x="-5" y="-52" width="10" height="38"/>
+          <rect x="-5" y="14" width="10" height="38"/>
+          <rect x="-52" y="-5" width="38" height="10"/>
+          <rect x="14" y="-5" width="38" height="10"/>
+        </g>
+      </g>
+    </svg>
+
+    <div class="band band--top" aria-hidden="true"></div>
+
+    <div class="hero__bar">
+      <span class="logo">FORGE<b>7</b></span>
+      <span class="mono hero__tag">Custom steel furniture // Est. 2011</span>
+    </div>
+
+    <div class="hero__main">
+      <div class="hero__title">
+        <p class="mono kicker">Line 07 / Welded in-house / No two alike</p>
+        <h1 class="stamp">
+          <span>BUILT</span>
+          <span>FROM</span>
+          <span class="stamp__hot">STEEL</span>
+        </h1>
+        <p class="hero__lede">Tables, benches and shelving, cut and welded to your measurements in a small workshop.</p>
+      </div>
+
+      <aside class="panel" aria-label="Workshop control panel">
+        <span class="rivet rivet--sm rivet--tl" aria-hidden="true"></span>
+        <span class="rivet rivet--sm rivet--tr" aria-hidden="true"></span>
+        <span class="rivet rivet--sm rivet--bl" aria-hidden="true"></span>
+        <span class="rivet rivet--sm rivet--br" aria-hidden="true"></span>
+        <p class="mono panel__title">Control // Line 7</p>
+
+        <div class="gauges" aria-hidden="true">
+          <figure class="gauge gauge--a">
+            <svg viewBox="0 0 120 120" focusable="false">
+              <circle cx="60" cy="60" r="57" class="gauge__bezel"/>
+              <circle cx="60" cy="60" r="51" class="gauge__face"/>
+              <path class="gauge__zone" pathLength="50" d="M27.47 92.53 A46 46 0 1 1 92.53 92.53"/>
+              <path class="gauge__ticks" pathLength="50" d="M27.47 92.53 A46 46 0 1 1 92.53 92.53"/>
+              <text x="60" y="88" class="gauge__label">PSI</text>
+              <g class="needle"><line x1="60" y1="64" x2="60" y2="20"/></g>
+              <circle cx="60" cy="60" r="6" class="gauge__hub"/>
+            </svg>
+          </figure>
+          <figure class="gauge gauge--b">
+            <svg viewBox="0 0 120 120" focusable="false">
+              <circle cx="60" cy="60" r="57" class="gauge__bezel"/>
+              <circle cx="60" cy="60" r="51" class="gauge__face"/>
+              <path class="gauge__zone" pathLength="50" d="M27.47 92.53 A46 46 0 1 1 92.53 92.53"/>
+              <path class="gauge__ticks" pathLength="50" d="M27.47 92.53 A46 46 0 1 1 92.53 92.53"/>
+              <text x="60" y="88" class="gauge__label">TEMP</text>
+              <g class="needle"><line x1="60" y1="64" x2="60" y2="20"/></g>
+              <circle cx="60" cy="60" r="6" class="gauge__hub"/>
+            </svg>
+          </figure>
+          <figure class="gauge gauge--c">
+            <svg viewBox="0 0 120 120" focusable="false">
+              <circle cx="60" cy="60" r="57" class="gauge__bezel"/>
+              <circle cx="60" cy="60" r="51" class="gauge__face"/>
+              <path class="gauge__zone" pathLength="50" d="M27.47 92.53 A46 46 0 1 1 92.53 92.53"/>
+              <path class="gauge__ticks" pathLength="50" d="M27.47 92.53 A46 46 0 1 1 92.53 92.53"/>
+              <text x="60" y="88" class="gauge__label">RPM</text>
+              <g class="needle"><line x1="60" y1="64" x2="60" y2="20"/></g>
+              <circle cx="60" cy="60" r="6" class="gauge__hub"/>
+            </svg>
+          </figure>
+        </div>
+
+        <div class="panel__row">
+          <div class="lamp" aria-hidden="true">
+            <span class="lamp__bulb"></span>
+            <span class="mono lamp__text">ON AIR</span>
+          </div>
+          <p class="mono panel__hint">Main power<br>Flip to enter the floor</p>
+        </div>
+
+        <button class="switch" id="power" type="button" role="switch" aria-checked="false" aria-controls="products">
+          <span class="switch__off mono" aria-hidden="true">OFF</span>
+          <span class="switch__track" aria-hidden="true"><span class="switch__lever"></span></span>
+          <span class="switch__on mono" aria-hidden="true">ON</span>
+          <span class="visually-hidden">Main power: flip the switch to scroll to the featured pieces</span>
+        </button>
+      </aside>
+    </div>
+
+    <div class="band band--bottom" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <!-- ============ PRODUCTS ============ -->
+    <section class="section" id="products" aria-labelledby="products-title">
+      <div class="wrap">
+        <p class="mono label"><span>01</span> Featured pieces</p>
+        <h2 id="products-title" class="h2">On the shop floor</h2>
+
+        <ul class="tags">
+          <li class="tag-wrap">
+            <article class="tag">
+              <span class="tag__ring" aria-hidden="true"></span>
+              <p class="mono tag__code">Ref T-7 / Table</p>
+              <h3 class="tag__name">Slab Table</h3>
+              <dl class="tag__specs">
+                <div><dt class="mono">Material</dt><dd>5 mm hot-rolled steel, waxed black</dd></div>
+                <div><dt class="mono">Size</dt><dd>2200 × 900 × 740 mm</dd></div>
+              </dl>
+              <p class="tag__price"><span class="mono">From</span> €1,480</p>
+            </article>
+          </li>
+          <li class="tag-wrap">
+            <article class="tag">
+              <span class="tag__ring" aria-hidden="true"></span>
+              <p class="mono tag__code">Ref B-2 / Bench</p>
+              <h3 class="tag__name">Rail Bench</h3>
+              <dl class="tag__specs">
+                <div><dt class="mono">Material</dt><dd>3 mm folded steel, powder-coated</dd></div>
+                <div><dt class="mono">Size</dt><dd>1800 × 400 × 450 mm</dd></div>
+              </dl>
+              <p class="tag__price"><span class="mono">From</span> €640</p>
+            </article>
+          </li>
+          <li class="tag-wrap">
+            <article class="tag">
+              <span class="tag__ring" aria-hidden="true"></span>
+              <p class="mono tag__code">Ref L-4 / Shelving</p>
+              <h3 class="tag__name">Ladder Shelf</h3>
+              <dl class="tag__specs">
+                <div><dt class="mono">Material</dt><dd>2 mm steel sheet, raw clear-lacquer</dd></div>
+                <div><dt class="mono">Size</dt><dd>1800 × 350 × 1900 mm</dd></div>
+              </dl>
+              <p class="tag__price"><span class="mono">From</span> €520</p>
+            </article>
+          </li>
+        </ul>
+        <p class="mono note">Every piece is made to order. Sizes and finishes can be changed.</p>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section section--story" id="story" aria-labelledby="story-title">
+      <div class="wrap story">
+        <div class="story__text">
+          <p class="mono label"><span>02</span> From the floor</p>
+          <h2 id="story-title" class="h2">Small shop, loud machines</h2>
+          <p>FORGE 7 started in a rented garage with one welder and a borrowed plasma table. Today it is three people in a brick shed behind the old rail yard, still making everything the slow way: measured twice, cut once, welded by hand.</p>
+          <p>We build for kitchens, studios, cafés and living rooms. Every table has a weld seam you can find if you look for it, and we leave it there on purpose. It is how you know a person made it.</p>
+        </div>
+        <figure class="quote">
+          <span class="quote__mark" aria-hidden="true">“</span>
+          <blockquote>
+            <p>Steel doesn't forgive and it doesn't forget. Get the measurement right, and it will outlast the house.</p>
+          </blockquote>
+          <figcaption class="mono">— Marta, welder and founder</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS / CONVEYOR ============ -->
+    <section class="section section--dark" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <p class="mono label label--light"><span>03</span> The line</p>
+        <h2 id="process-title" class="h2 h2--light">Four stations, one piece</h2>
+
+        <ol class="conveyor">
+          <li class="station">
+            <div class="station__box">
+              <svg viewBox="0 0 48 48" class="station__icon" aria-hidden="true" focusable="false"><path d="M4 30 L30 4 L44 18 L18 44 Z M12 30 L16 34 M18 24 L22 28 M24 18 L28 22 M30 12 L34 16" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+              <span class="mono station__no">Step 01</span>
+              <h3 class="station__name">Measure</h3>
+              <p>We visit, sketch and agree on every millimetre.</p>
+            </div>
+            <div class="belt" aria-hidden="true"></div>
+          </li>
+          <li class="station">
+            <div class="station__box">
+              <svg viewBox="0 0 48 48" class="station__icon" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="3"/><path d="M24 4 L28 12 L36 8 L36 16 L44 20 L38 26 L42 34 L34 34 L32 42 L24 38 L16 42 L14 34 L6 34 L10 26 L4 20 L12 16 L12 8 L20 12 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+              <span class="mono station__no">Step 02</span>
+              <h3 class="station__name">Cut</h3>
+              <p>Plasma and saw turn sheet and tube into parts.</p>
+            </div>
+            <div class="belt" aria-hidden="true"></div>
+          </li>
+          <li class="station">
+            <div class="station__box">
+              <svg viewBox="0 0 48 48" class="station__icon" aria-hidden="true" focusable="false"><path d="M24 4 V16 M24 32 V44 M4 24 H16 M32 24 H44 M10 10 L18 18 M30 30 L38 38 M38 10 L30 18 M18 30 L10 38" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="currentColor"/></svg>
+              <span class="mono station__no">Step 03</span>
+              <h3 class="station__name">Weld</h3>
+              <p>Joints are welded by hand, then ground to feel right.</p>
+            </div>
+            <div class="belt" aria-hidden="true"></div>
+          </li>
+          <li class="station">
+            <div class="station__box">
+              <svg viewBox="0 0 48 48" class="station__icon" aria-hidden="true" focusable="false"><path d="M8 40 L26 22 L32 28 L14 46 Z M26 22 L40 6 L44 10 L32 28" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" transform="translate(0 -4)"/></svg>
+              <span class="mono station__no">Step 04</span>
+              <h3 class="station__name">Finish</h3>
+              <p>Wax, oil or powder coat, then delivery to your door.</p>
+            </div>
+            <div class="belt" aria-hidden="true"></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ VISIT / ENAMEL PLATE ============ -->
+    <section class="section" id="visit" aria-labelledby="visit-title">
+      <div class="wrap">
+        <p class="mono label"><span>04</span> Visit the workshop</p>
+        <div class="enamel">
+          <span class="enamel__screw enamel__screw--tl" aria-hidden="true"></span>
+          <span class="enamel__screw enamel__screw--tr" aria-hidden="true"></span>
+          <span class="enamel__screw enamel__screw--bl" aria-hidden="true"></span>
+          <span class="enamel__screw enamel__screw--br" aria-hidden="true"></span>
+          <div class="enamel__inner">
+            <h2 id="visit-title" class="enamel__title">Open to visitors</h2>
+            <div class="enamel__cols">
+              <div>
+                <h3 class="mono enamel__sub">Hours</h3>
+                <table class="hours">
+                  <tbody>
+                    <tr><th scope="row">Mon – Fri</th><td>07:30 – 17:00</td></tr>
+                    <tr><th scope="row">Saturday</th><td>09:00 – 13:00</td></tr>
+                    <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+                  </tbody>
+                </table>
+                <p class="mono enamel__small">Please ring the bell. Hearing protection required on the floor.</p>
+              </div>
+              <div>
+                <h3 class="mono enamel__sub">Address</h3>
+                <address class="enamel__addr">
+                  FORGE 7<br>
+                  Unit 7, Foundry Yard<br>
+                  14 Anvil Lane<br>
+                  Behind the old rail depot
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <p class="logo logo--sm">FORGE<b>7</b></p>
+      <p class="mono">© 2026 FORGE 7 — Custom steel furniture</p>
+      <a class="mono footer__link" href="https://www.instagram.com/forge7workshop" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+        Instagram @forge7workshop
+      </a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
